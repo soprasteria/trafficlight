@@ -201,7 +201,6 @@ html, body, #root, #rootReact {
 
 .trafficlight {
   background-color: #202d3a;
-  height:100%;
   padding:0;
 }
 
@@ -210,11 +209,9 @@ html, body, #root, #rootReact {
 }
 
 .tl-light {
-  width: auto;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-  position: absolute;
+  max-height: 30%;
+  max-width: 250px;
+  min-width: 100px;
   opacity: .05;
 }
 

@@ -10,16 +10,12 @@ class TrafficLightComponent extends React.Component {
     const changeStatus = this.props.changeStatus
     const trafficlight = this.props.trafficlight
     return (
-      <div className="layout vertical around-justified height-fill">
-        <div className="flex lightContainer">
-          <img className={"tl-light tl-red "+ (trafficlight.red ? "tl-enable" : "")} src="./app/components/trafficlight/images/red-light.png" onClick={() => changeStatus('failed')}/>
-        </div>
-        <div className="flex lightContainer">
-          <img className={"tl-light tl-yellow " + (trafficlight.yellow ? "tl-enable" : "")} src="./app/components/trafficlight/images/yellow-light.png" onClick={() => changeStatus('unstable')}/>
-        </div>
-        <div className="flex lightContainer">
-          <img className={"tl-light tl-green "+ (trafficlight.green ? "tl-enable" : "")} src="./app/components/trafficlight/images/green-light.png" onClick={() => changeStatus('success')}/>
-        </div>
+      <div className="trafficlight layout vertical around-justified center height-fill">
+        <div className="flex-2"></div>
+        <img className={"tl-light tl-red "+ (trafficlight.red ? "tl-enable" : "")} src="./app/components/trafficlight/images/red-light.png" onClick={() => changeStatus('failed')}/>
+        <img className={"tl-light tl-yellow " + (trafficlight.yellow ? "tl-enable" : "")} src="./app/components/trafficlight/images/yellow-light.png" onClick={() => changeStatus('unstable')}/>
+        <img className={"tl-light tl-green "+ (trafficlight.green ? "tl-enable" : "")} src="./app/components/trafficlight/images/green-light.png" onClick={() => changeStatus('success')}/>
+        <div className="flex-2"></div>
       </div>
     )
   }
