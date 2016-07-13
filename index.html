@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/flat-ui.min.css">
+    <link rel="stylesheet" href="./app/styles/flex.css">
+    <link rel="stylesheet" href="./app/styles/main.css">
+
+  </head>
+  <body>
+      <div id="root"></div>
+  </body>
+
+  <script>
+  var $ =  require('./bower_components/flat-ui/dist/js/vendor/jquery.min.js');
+  var jQuery = $
+  window.jQuery = $; // Assure it's available globally.
+  require('./app/main.js')
+  </script>
+  <script src='./bower_components/flat-ui/dist/js/flat-ui.min.js'></script>
+</html>

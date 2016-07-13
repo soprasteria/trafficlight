@@ -1,0 +1,277 @@
+
+/* Bootstrap custom */
+@media (max-width: 768px) {
+    .navbar-header {
+        float: left;
+    }
+
+    .navbar {
+        border-radius: 4px;
+        min-width: 400px;
+    }
+
+    .nav-tabs-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs-justified > .active > a,
+    .nav-tabs-justified > .active > a:hover,
+    .nav-tabs-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+
+    .nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-justified > li > a {
+        margin-bottom: 0;
+    }
+
+    .nav-tabs.nav-justified > li > a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs.nav-justified > .active > a,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:focus {
+        border-bottom-color: #fff;
+    }
+
+    .nav-tabs.nav-justified > li {
+        display: table-cell;
+        width: 1%;
+    }
+    .nav-tabs.nav-justified > li > a {
+        margin-bottom: 0;
+    }
+
+    .navbar-right .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+    .navbar-right .dropdown-menu-left {
+        right: auto;
+        left: 0;
+    }
+    .container {
+        min-width: 400px;
+    }
+
+    .navbar-collapse {
+        width: auto;
+        border-top: 0;
+        box-shadow: none;
+    }
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+    .navbar-collapse.in {
+        overflow-y: visible;
+    }
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-static-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .container > .navbar-header,
+    .container-fluid > .navbar-header,
+    .container > .navbar-collapse,
+    .container-fluid > .navbar-collapse {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .navbar-static-top {
+        border-radius: 0;
+    }
+
+    .navbar-fixed-top,
+    .navbar-fixed-bottom {
+        border-radius: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        float: left;
+    }
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .navbar-nav.navbar-right:last-child {
+        margin-right: -15px;
+    }
+
+    .navbar-left {
+        float: left !important;
+    }
+    .navbar-right {
+        float: right !important;
+    }
+
+    .navbar-form .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .navbar-form .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+    .navbar-form .control-label {
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .navbar-form .radio,
+    .navbar-form .checkbox {
+        display: inline-block;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+    .navbar-form .radio input[type="radio"],
+    .navbar-form .checkbox input[type="checkbox"] {
+        float: none;
+        margin-left: 0;
+    }
+    .navbar-form .has-feedback .form-control-feedback {
+        top: 0;
+    }
+
+    .navbar-form {
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        border: 0;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+    .navbar-form.navbar-right:last-child {
+        margin-right: -15px;
+    }
+
+    .navbar-text {
+        float: left;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .navbar-text.navbar-right:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Navbar */
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
+/* Global changes */
+html, body, #root, #rootReact {
+  height: 100%;
+}
+
+#rootLayout, .trafficlight {
+  height: calc(100% - 53px);
+  margin: 0;
+}
+
+.height-fill {
+  height: 100%;
+}
+
+/* Trafficlight */
+
+.trafficlight {
+  background-color: #202d3a;
+  height:100%;
+  padding:0;
+}
+
+.lightContainer {
+  position: relative;
+}
+
+.tl-light {
+  width: 100%;
+  height: 100%;
+  background-size: 5px 5px;
+  position: absolute;
+}
+
+.tl-red {
+  background: #E74C3C;
+  animation: 13s red infinite;
+  box-shadow:
+    0 0 20px #E74C3C;
+}
+
+.tl-yellow {
+  background: #f1c40f;
+  animation: 13s yellow infinite;
+  box-shadow:
+    0 0 20px #f1c40f;
+}
+
+.tl-green {
+  background: #2ECC71;
+  box-shadow:
+    0 0 20px lime;
+  animation: 13s green infinite;
+}
+
+@keyframes red{
+  0%{opacity: 1}
+  20%{opacity: 1}
+  40%{opacity: 1}
+  60%{opacity: .05}
+  80%{opacity: .05}
+  100%{opacity: .05}
+}
+
+@keyframes yellow{
+  0%{opacity: 0.05}
+  20%{opacity: 0.05}
+  40%{opacity: 1}
+  50%{opacity: 0.05}
+  60%{opacity: 0.05}
+  80%{opacity: 0.05}
+  100%{opacity: 0.05}
+}
+
+@keyframes green{
+  0%{opacity: 0.05}
+  20%{opacity: 0.05}
+  40%{opacity: 0.05}
+  60%{opacity: 1}
+  80%{opacity: 1}
+  83%{opacity: 0.05}
+  86%{opacity: 1}
+  89%{opacity: 0.05}
+  93%{opacity: 1}
+  96%{opacity: 0.05}
+  100%{opacity: 1}
+}
+
+/* Right view */
+.view-tl {
+  height : 100%;
+  background-color: #ecf0f1;
+}
