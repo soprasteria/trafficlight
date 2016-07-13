@@ -210,64 +210,33 @@ html, body, #root, #rootReact {
 }
 
 .tl-light {
-  width: 100%;
-  height: 100%;
-  background-size: 5px 5px;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
   position: absolute;
+  opacity: .05;
 }
 
-.tl-red {
-  background: #E74C3C;
-  animation: 13s red infinite;
-  box-shadow:
-    0 0 20px #E74C3C;
+.tl-light:hover {
+  cursor:pointer;
 }
 
-.tl-yellow {
-  background: #f1c40f;
-  animation: 13s yellow infinite;
-  box-shadow:
-    0 0 20px #f1c40f;
+.tl-enable {
+  animation: enabling 1s ease-out;
+  opacity: 1;
 }
 
-.tl-green {
-  background: #2ECC71;
-  box-shadow:
-    0 0 20px lime;
-  animation: 13s green infinite;
-}
-
-@keyframes red{
-  0%{opacity: 1}
-  20%{opacity: 1}
-  40%{opacity: 1}
-  60%{opacity: .05}
-  80%{opacity: .05}
-  100%{opacity: .05}
-}
-
-@keyframes yellow{
-  0%{opacity: 0.05}
-  20%{opacity: 0.05}
-  40%{opacity: 1}
-  50%{opacity: 0.05}
-  60%{opacity: 0.05}
-  80%{opacity: 0.05}
-  100%{opacity: 0.05}
-}
-
-@keyframes green{
-  0%{opacity: 0.05}
-  20%{opacity: 0.05}
-  40%{opacity: 0.05}
-  60%{opacity: 1}
-  80%{opacity: 1}
-  83%{opacity: 0.05}
-  86%{opacity: 1}
-  89%{opacity: 0.05}
-  93%{opacity: 1}
-  96%{opacity: 0.05}
+@keyframes enabling{
+  0%{opacity: .05}
+  1%{opacity: .05}
   100%{opacity: 1}
+}
+
+@keyframes disabling {
+  0%{opacity: 1}
+  1%{opacity: 1}
+  100%{opacity: .05}
 }
 
 /* Right view */

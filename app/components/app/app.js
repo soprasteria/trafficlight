@@ -9,8 +9,8 @@ class Main extends React.Component {
       <div id="rootReact">
         <NavBar/>
         <div id="rootLayout" className="row">
-          <div className="trafficlight col-xs-1 col-md-1"><TrafficLight/></div>
-          <div className="view-tl col-xs-11 col-md-11">{this.props.children}</div>
+          <div className="trafficlight col-xs-4 col-md-3"><TrafficLight/></div>
+          <div className="view-tl col-xs-8 col-md-9">{this.props.children}</div>
         </div>
       </div>
     )

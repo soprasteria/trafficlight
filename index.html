@@ -17,6 +17,7 @@
   var $ =  require('./bower_components/flat-ui/dist/js/vendor/jquery.min.js');
   var jQuery = $
   window.jQuery = $; // Assure it's available globally.
+  require('babel-register')
   require('./app/main.js')
   </script>
   <script src='./bower_components/flat-ui/dist/js/flat-ui.min.js'></script>

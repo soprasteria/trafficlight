@@ -11,18 +11,19 @@ class TrafficLightComponent extends React.Component {
     const trafficlight = this.props.trafficlight
     return (
       <div className="layout vertical around-justified height-fill">
-        <div className="flex lightContainer"><div className="tl-light tl-red"></div></div>
-        <div className="flex lightContainer"><div className="tl-light tl-yellow"></div></div>
-        <div className="flex lightContainer"><div className="tl-light tl-green"></div></div>
+        <div className="flex lightContainer">
+          <img className={"tl-light tl-red "+ (trafficlight.red ? "tl-enable" : "")} src="./app/components/trafficlight/images/red-light.png" onClick={() => changeStatus('failed')}/>
+        </div>
+        <div className="flex lightContainer">
+          <img className={"tl-light tl-yellow " + (trafficlight.yellow ? "tl-enable" : "")} src="./app/components/trafficlight/images/yellow-light.png" onClick={() => changeStatus('unstable')}/>
+        </div>
+        <div className="flex lightContainer">
+          <img className={"tl-light tl-green "+ (trafficlight.green ? "tl-enable" : "")} src="./app/components/trafficlight/images/green-light.png" onClick={() => changeStatus('success')}/>
+        </div>
       </div>
     )
   }
 }
-
-//<a className="btn btn-block btn-lg btn-danger" onClick={() => changeStatus('failed')}>Red</a>
-//<a className="btn btn-block btn-lg btn-warning" onClick={() => changeStatus('unstable')}>Yellow</a>
-//<a className="btn btn-block btn-lg btn-success" onClick={() => changeStatus('success')}>Green</a>
-
 
 // Function to map state to container props
 const mapStateToTrafficLightProps = (state) => {

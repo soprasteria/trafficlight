@@ -12,8 +12,10 @@ appIcon = new Tray('./icon.png');
 
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 600,
-    height: 300
+    width: 1200,
+    height: 600,
+    minWidth:800,
+    minHeight:400
   });
 
   mainWindow.setMenu(null)
