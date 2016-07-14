@@ -2,6 +2,7 @@ import React from 'react'
 
 import TrafficLight from '../trafficlight/trafficlight.js'
 import NavBar from '../navbar/navbar.js'
+import SideView from '../sideview/sideview.js'
 
 class Main extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class Main extends React.Component {
         <NavBar/>
         <div id="rootLayout" className="layout horizontal">
           <TrafficLight className="flex-2"/>
-          <div className="flex-10">{this.props.children}</div>
+          <SideView className="flex-10"/>
         </div>
       </div>
     )

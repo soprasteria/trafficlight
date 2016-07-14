@@ -197,6 +197,18 @@ html, body, #root, #rootReact {
   height: 100%;
 }
 
+.help-button {
+  vertical-align: middle;
+  margin-left: 1em;
+}
+
+.circle-icon {
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 /* Trafficlight */
 
 .trafficlight {
@@ -237,7 +249,22 @@ html, body, #root, #rootReact {
 }
 
 /* Right view */
-.view-tl {
+.sideview {
   height : 100%;
+  width: 100%;
   background-color: #ecf0f1;
+  padding: 30px;
+}
+
+.sideview-section {
+  margin-bottom: 20px;
+}
+
+.sideview-section-toolbox {
+  float: right;
+}
+
+.sideview-section-toolbox span {
+  vertical-align: middle;
+  margin-left: 5px;
 }
